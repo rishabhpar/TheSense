@@ -1,5 +1,5 @@
 class SafeSpot:
-    id = -1
+    id = -1     # should hold values 1-100
     listOfSpotsOccupied = []
     covered = False
 
