@@ -1,7 +1,7 @@
 class GasLeak:
     row = -1
     col = -1
-    windDirection = 0       # use 0 - 359 where 0 is exactly east and then go CCW
+    windDirection = 0       # use 0 - 359 where 0 is exactly north and then go CW
 
     def __init__(self, r, c, wd):
         self.row = r

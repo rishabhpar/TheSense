@@ -1,12 +1,16 @@
 class SafeSpot:
     id = -1     # should hold values 1-100
     listOfSpotsOccupied = []
-    covered = False
+    completelyUnsafe = False
+    completelySafe = False
+    locationCenter = []
+    count = 0
+    isCrossWind = False
 
-    def __init__(self, id, list, covered):
+    def __init__(self, id, list, number):
         self.id = id
         self.listOfSpotsOccupied = list
-        self.covered = covered
+        self.count = number
 
     def get_id(self):
         return self.id
@@ -14,5 +18,3 @@ class SafeSpot:
     def get_list(self):
         return self.listOfSpotsOccupied
 
-    def is_covered(self):
-        return self.covered
