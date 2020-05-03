@@ -68,12 +68,10 @@ def run_map3():
 
     # Step 5: create instances of people. This simulates getting the person's
     # location once a gas leak is identified.
-    p1 = Person(28, 75, 101, True)
-    p2 = Person(10, 16, 102, True)
-    p3 = Person(95, 95, 103, True)
-    p4 = Person(50, 5, 104, True)
-    p5 = Person(60, 60, 105, True)
-    listOfEmployees = [p1, p2, p3, p4, p5]
+    p1 = Person(10, 16, 102, True)
+    p2 = Person(95, 95, 103, True)
+    p3 = Person(50, 5, 104, True)
+    listOfEmployees = [p1, p2, p3]
 
     for emp in listOfEmployees:
         map1[emp.get_row()][emp.get_col()] = emp.get_id()
